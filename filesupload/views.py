@@ -4,11 +4,7 @@ from .forms import UploadFileForm
 from .models import Shop
 from .serializer import ShopSerializer, ShopShowSerializer,TransactionsSerializer
 from rest_framework import viewsets
-from rest_framework.views import APIView, Response, Request, status
-
-
-# from .serializers import ShopSerializer, TransactionsSerializer
-import ipdb
+from rest_framework.views import APIView, Response
 
 
 def upload_file(request):

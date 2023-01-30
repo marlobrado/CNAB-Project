@@ -1,12 +1,9 @@
 from .models import Shop, Transactions
 from rest_framework import serializers
-import ipdb
 
 
 class ShopSerializer(serializers.Serializer):
-    # id = serializers.IntegerField(read_only=True)
-    # nomeDaLoja =serializers.CharField()
-    # donoDaLoja = serializers.CharField()
+
     file = serializers.FileField(write_only=True)
 
     def create(self, validated_data):
